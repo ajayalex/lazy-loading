@@ -1,6 +1,6 @@
 # Lazy Loading
 
-Test task for lazy loading with vanilla js.
+Test task for lazy loading with vanilla js and json placeholder API.
 
 ## How to run?
 
