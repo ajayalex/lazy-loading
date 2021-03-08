@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     /* GET LIST OF IMAGES */
-    let getImagesList = () => {
+    const getImagesList = () => {
         if (firstInit) {
             start += limit;
         } else {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     /* CREATE NEW IMAGES WITH EMPTY SRC */
-    let createNewImages = (list) => {
+    const createNewImages = (list) => {
         list.forEach(el => {
             const img = document.createElement('img');
 
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     /* FILL IMG SRC AND LOAD IMG */
-    let lazyLoad = (target) => {
+    const lazyLoad = (target) => {
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
